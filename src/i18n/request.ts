@@ -1,8 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
 import { routing } from './routing';
-<<<<<<< HEAD
 import { mergeWithFallback } from '@/lib/i18n/fallback';
-=======
 
 function englishFallback(key: string): string {
   const label = key.split('.').pop() || key;
@@ -62,7 +60,6 @@ function completeEnglishMessages(
 
   return result;
 }
->>>>>>> 3ed567ebd4fe6fe451c289bfb99bbd48db771714
 
 const englishOcrOverrides: Record<string, unknown> = {
   tools: {
@@ -121,10 +118,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
-<<<<<<< HEAD
-  // Always load English messages for fallback
-  const englishMessages = (await import(`../../messages/en.json`)).default;
-=======
   const rawIndonesianMessages = (await import('../../messages/id.json')).default;
   const rawEnglishMessages = (await import('../../messages/en.json')).default;
 
@@ -138,7 +131,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
     rawEnglishMessages as Record<string, unknown>,
     englishOcrOverrides
   );
->>>>>>> 3ed567ebd4fe6fe451c289bfb99bbd48db771714
 
   // Load the messages for the requested locale
   let localeMessages;
