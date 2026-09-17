@@ -290,7 +290,6 @@ export const Header: React.FC<HeaderProps> = ({ locale, showSearch = true }) => 
                     className="relative text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]"
                   >
                     <Search className="h-5 w-5" aria-hidden="true" />
-                    <span className="ml-2 hidden lg:inline-block text-xs text-[hsl(var(--color-muted-foreground))/0.5] border border-[hsl(var(--color-border))] rounded px-1.5 py-0.5">⌘K</span>
                   </Button>
                 )}
               </div>

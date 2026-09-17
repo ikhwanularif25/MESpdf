@@ -111,47 +111,9 @@ export default function ToolsPageClient({ locale, localizedToolContent }: ToolsP
 
       <main className="flex-1">
         {/* Page Header */}
-        <section className="relative pt-36 pb-20 overflow-hidden">
+        <section className="relative pt-3 pb-20 overflow-hidden">
           {/* Animated Background Blobs (Subtle) */}
-          <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[hsl(var(--color-primary)/0.05)] rounded-full mix-blend-multiply filter blur-3xl opacity-50" />
-            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[hsl(var(--color-accent)/0.05)] rounded-full mix-blend-multiply filter blur-3xl opacity-50" />
-          </div>
-
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-[hsl(var(--color-foreground))] mb-6">
-                <span className="text-gradient">{t('toolsPage.title')}</span>
-              </h1>
-              <p className="text-lg text-[hsl(var(--color-muted-foreground))] mb-10 leading-relaxed">
-                {t('toolsPage.subtitle', { count: allTools.length })}
-              </p>
-
-              {/* Search Bar */}
-              <div className="relative max-w-2xl mx-auto">
-                <div className="relative group">
-                  <Search className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-[hsl(var(--color-primary))] group-focus-within:text-[hsl(var(--color-primary))] transition-colors z-10" aria-hidden="true" />
-                  <input
-                    type="search"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder={t('tools.search.placeholder')}
-                    className="w-full pl-14 pr-12 py-4 text-lg rounded-2xl border border-[hsl(var(--color-border))] bg-[hsl(var(--color-card))] dark:bg-[hsl(var(--color-card))] text-[hsl(var(--color-foreground))] placeholder:text-[hsl(var(--color-muted-foreground))] shadow-md focus:outline-none focus:ring-4 focus:ring-[hsl(var(--color-primary)/0.15)] focus:border-[hsl(var(--color-primary))] transition-all"
-                    aria-label="Search tools"
-                  />
-                  {searchQuery && (
-                    <button
-                      onClick={handleClearSearch}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 p-2 hover:bg-[hsl(var(--color-muted))] rounded-full transition-colors"
-                      aria-label="Clear search"
-                    >
-                      <X className="h-5 w-5 text-[hsl(var(--color-muted-foreground))]" aria-hidden="true" />
-                    </button>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </section>
 
         {/* Filters and Tools */}
@@ -222,17 +184,7 @@ export default function ToolsPageClient({ locale, localizedToolContent }: ToolsP
             </div>
 
             {/* Results Count */}
-            <div className="mb-6 px-2">
-              <p className="text-sm text-[hsl(var(--color-muted-foreground))]">
-                {selectedCategory === 'favorites'
-                  ? `${filteredTools.length} ${t('tools.favorite.title').toLowerCase()}`
-                  : filteredTools.length === allTools.length
-                    ? t('toolsPage.showingAll', { count: allTools.length })
-                    : t('toolsPage.showingFiltered', { filtered: filteredTools.length, total: allTools.length })}
-                {searchQuery && ` ${t('toolsPage.forQuery', { query: searchQuery })}`}
-                {selectedCategory !== 'all' && selectedCategory !== 'favorites' && ` ${t('toolsPage.inCategory', { category: t(`home.categories.${categoryTranslationKeys[selectedCategory as ToolCategory]}`) })}`}
-              </p>
-            </div>
+            
 
             {/* Tools Grid */}
             {filteredTools.length > 0 ? (

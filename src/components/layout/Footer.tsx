@@ -18,7 +18,7 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
 
   return (
     
-      <footer className="container mx-auto px-4">
+      <footer className="container mb-4 mx-auto px-4">
 
         <div className="pt-8 border-t border-[hsl(var(--color-border))] flex flex-col md:flex-row items-center justify-between gap-4">
           <img src="/images/mes-logo.webp" alt="MES" className="h-8 w-auto object-contain" />
@@ -30,7 +30,10 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
             <Link href={`/${locale}/privacy`} className="text-xs text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]">Privacy</Link>
             <Link href={`/${locale}/cookies`} className="text-xs text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))]">Cookies</Link>
           </div>
+          
         </div>
+
+        
       
     </footer>
   );

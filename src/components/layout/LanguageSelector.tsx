@@ -24,7 +24,7 @@ export function LanguageSelector({ currentLocale }: LanguageSelectorProps) {
 
   return (
     <div className="relative flex items-center gap-1" aria-label={t('selectLanguage')}>
-      <Globe className="h-4 w-4 text-[hsl(var(--color-muted-foreground))]" aria-hidden="true" />
+      
       {locales.map((locale) => (
         <Button
           key={locale}

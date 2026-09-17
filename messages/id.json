@@ -1,7 +1,7 @@
 {
   "metadata": {
     "home": {
-      "title": "MESpdf - Alat PDF Profesional",
+      "title": "PDFCraft - Alat PDF Profesional",
       "description": "Gratis, Pribadi & Berbasis Browser. Gabung, edit, dan ubah file PDF secara online tanpa mengunggah ke server."
     },
     "tools": {
@@ -10,19 +10,19 @@
     },
     "about": {
       "title": "Tentang",
-      "description": "Pelajari tentang MESpdf - aplikasi PDF internal untuk pemrosesan dokumen yang aman."
+      "description": "Pelajari tentang PDFCraft - toolkit PDF gratis, pribadi, dan kuat. Semua proses terjadi di browser Anda."
     },
     "faq": {
       "title": "Pertanyaan yang Sering Diajukan",
-      "description": "Temukan jawaban untuk pertanyaan umum tentang MESpdf."
+      "description": "Temukan jawaban untuk pertanyaan umum tentang PDFCraft. Pelajari cara menggunakan alat PDF kami secara efektif."
     },
     "privacy": {
       "title": "Kebijakan Privasi",
-      "description": "Kebijakan privasi MESpdf. File Anda diproses secara lokal di browser Anda."
+      "description": "Kebijakan privasi PDFCraft. File Anda tidak pernah meninggalkan perangkat Anda - semua proses terjadi secara lokal di browser Anda."
     },
     "contact": {
       "title": "Hubungi Kami",
-      "description": "Hubungi tim MES untuk dukungan aplikasi MESpdf."
+      "description": "Hubungi tim PDFCraft. Kami ingin mendengar pendapat Anda."
     },
     "keywords": {
       "pdfTools": "alat PDF",
@@ -35,7 +35,7 @@
     }
   },
   "common": {
-    "brand": "MESpdf",
+    "brand": "PDFCraft",
     "tagline": "Alat PDF Profesional - Gratis & Pribadi",
     "navigation": {
       "home": "Rumah",
@@ -83,8 +83,8 @@
       "loading": "Memuat..."
     },
     "footer": {
-      "footer": "© 2025 MES. Hak cipta dilindungi undang-undang.",
-      "copyright": "© {year} MES. Hak cipta dilindungi undang-undang.",
+      "footer": "© 2025 PDFCraft. Hak cipta dilindungi undang-undang.",
+      "copyright": "© {year} PDFCraft. Hak cipta dilindungi undang-undang.",
       "privacyBadge": "100% Pribadi - File tidak pernah meninggalkan perangkat Anda",
       "madeWith": "Dibuat dengan <Heart /> dan <Nextjs />"
     },
@@ -129,7 +129,7 @@
       "finish": "Selesai",
       "skip": "Lewati",
       "stepOf": "dari",
-      "welcomeTitle": "Selamat Datang di MESpdf!",
+      "welcomeTitle": "Selamat Datang di PDFCraft!",
       "welcomeMessage": "Apakah Anda ingin tur singkat untuk mempelajari cara menggunakan alat PDF kami? Hanya butuh satu menit.",
       "helpButton": "Tur Bantuan"
     },

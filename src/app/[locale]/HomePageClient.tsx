@@ -94,15 +94,7 @@ export default function HomePageClient({ locale, localizedToolContent }: HomePag
         <section className="py-16 bg-[hsl(var(--color-muted)/0.5)]" aria-labelledby="popular-tools-heading">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 mb-3 rounded-full ">
-                
-              </div>
-              <h2 id="popular-tools-heading" className="text-3xl font-bold text-[hsl(var(--color-foreground))] mb-3">
-                {t('home.popularTools.title')}
-              </h2>
-              <p className="text-[hsl(var(--color-muted-foreground))] max-w-2xl mx-auto text-base">
-                {t('home.popularTools.description')}
-              </p>
+              
             </div>
             <ToolGrid
               tools={popularTools}
